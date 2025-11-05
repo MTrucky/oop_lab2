@@ -425,6 +425,7 @@
      waitForEnter();
  }
  
+ 
  void demonstrateRootsAndStatic(Polynomka& poly1, Polynomka& poly2) {
      int polyChoice;
      
