@@ -9,7 +9,6 @@
 
 using namespace std;
 
-// Инициализация статического поля
 std::size_t Polynomka::rootsCalculationCounter_ = 0;
 
 // Конструктор по умолчанию
@@ -35,7 +34,6 @@ Polynomka::~Polynomka() {
     print();
 }
 
-// Установка коэффициентов
 void Polynomka::setCoefficients(double a, double b, double c) {
     a_ = a;
     b_ = b;
@@ -47,15 +45,14 @@ double Polynomka::evaluate(double x) const {
     return a_ * x * x + b_ * x + c_;
 }
 
-// Поиск корней многочлена
+// корней многочлена
 void Polynomka::findRoots() const {
-    rootsCalculationCounter_++; // Увеличиваем статический счетчик
+    rootsCalculationCounter_++; 
     
     cout << "Поиск корней для: ";
     print();
     
     if (a_ == 0) {
-        // Линейное уравнение bx + c = 0
         if (b_ == 0) {
             if (c_ == 0) {
                 cout << "  Бесконечное количество корней (нулевой многочлен)" << endl;
@@ -67,7 +64,6 @@ void Polynomka::findRoots() const {
             cout << "  Один корень: x = " << root << endl;
         }
     } else {
-        // Квадратное уравнение
         double discriminant = b_ * b_ - 4 * a_ * c_;
         
         if (discriminant > 0) {
@@ -84,14 +80,11 @@ void Polynomka::findRoots() const {
     cout << "  (Всего поисков корней: " << rootsCalculationCounter_ << ")" << endl;
 }
 
-// Получение счетчика поисков корней
 std::size_t Polynomka::getRootsCalculationCount() {
     return rootsCalculationCounter_;
 }
 
-// Унарные операторы
-
-// Префиксный инкремент (++poly)
+// (++poly)
 Polynomka& Polynomka::operator++() {
     a_ += 1;
     b_ += 1; 
@@ -99,19 +92,16 @@ Polynomka& Polynomka::operator++() {
     return *this;
 }
 
-// Постфиксный инкремент (poly++)
+// (poly++)
 Polynomka Polynomka::operator++(int) {
-    // Создаем временную копию с текущими значениями
     Polynomka temp(a_, b_, c_);
-    // Увеличиваем текущий объект
     a_ += 1;
     b_ += 1;
     c_ += 1;
-    // Возвращаем старые значения
     return temp;
 }
 
-// Префиксный декремент (--poly)
+//  (--poly)
 Polynomka& Polynomka::operator--() {
     a_ -= 1;
     b_ -= 1;
@@ -119,19 +109,14 @@ Polynomka& Polynomka::operator--() {
     return *this;
 }
 
-// Постфиксный декремент (poly--)
+//  (poly--)
 Polynomka Polynomka::operator--(int) {
-    // Создаем временную копию с текущими значениями
     Polynomka temp(a_, b_, c_);
-    // Уменьшаем текущий объект
     a_ -= 1;
     b_ -= 1;
     c_ -= 1;
-    // Возвращаем старые значения
     return temp;
 }
-
-// Операторы арифметического присваивания
 
 // +=
 Polynomka& Polynomka::operator+=(const Polynomka& other) {
@@ -167,8 +152,6 @@ Polynomka& Polynomka::operator/=(double scalar) {
     return *this;
 }
 
-// Бинарные арифметические операторы (реализованы через присваивание)
-
 // +
 Polynomka operator+(Polynomka lhs, const Polynomka& rhs) {
     lhs += rhs; // Используем operator+=
@@ -181,19 +164,19 @@ Polynomka operator-(Polynomka lhs, const Polynomka& rhs) {
     return lhs;
 }
 
-// * (умножение на скаляр)
+// * (умножение скаляр)
 Polynomka operator*(Polynomka lhs, double scalar) {
     lhs *= scalar; // Используем operator*=
     return lhs;
 }
 
-// / (деление на скаляр)
+// / (деление н скаляр)
 Polynomka operator/(Polynomka lhs, double scalar) {
     lhs /= scalar; // Используем operator/=
     return lhs;
 }
 
-// Бинарные операторы сравнения (сравнивают значения в точке x)
+// Бинарные операторы сравнения
 
 // <
 bool Polynomka::isLessThan(const Polynomka& other, double x) const {
@@ -225,7 +208,6 @@ bool Polynomka::isNotEqual(const Polynomka& other, double x) const {
     return this->evaluate(x) != other.evaluate(x);
 }
 
-// Вывод многочлена
 void Polynomka::print() const {
     cout << a_ << "x²";
     if (b_ >= 0) cout << " + " << b_ << "x";
