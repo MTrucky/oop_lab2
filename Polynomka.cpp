@@ -34,6 +34,7 @@ Polynomka::~Polynomka() {
     print();
 }
 
+
 void Polynomka::setCoefficients(double a, double b, double c) {
     a_ = a;
     b_ = b;
