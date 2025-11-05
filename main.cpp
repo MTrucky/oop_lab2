@@ -1,9 +1,9 @@
 /**
  * @file main.cpp
- * @brief Демонстрационная программа для класса Polynomka с интерактивным меню
+ * @brief Демонстрационная программа для класса Polynomial с интерактивным меню
  */
 
- #include "Polynomka.h"
+ #include "Polynomial.h"
  #include <iostream>
  #include <limits>
  
@@ -11,12 +11,12 @@
  
  // Прототипы функций меню
  void displayMainMenu();
- void createPolynomkaMenu(Polynomka& poly, Polynomka& otherPoly, int polyNumber);
- void demonstrateUnaryOperators(Polynomka& poly1, Polynomka& poly2);
- void demonstrateArithmeticAssignment(Polynomka& poly1, Polynomka& poly2);
- void demonstrateBinaryOperators(Polynomka& poly1, Polynomka& poly2);
- void demonstrateComparisonOperators(Polynomka& poly1, Polynomka& poly2);
- void demonstrateRootsAndStatic(Polynomka& poly1, Polynomka& poly2);
+ void createPolynomialMenu(Polynomial& poly, Polynomial& otherPoly, int polyNumber);
+ void demonstrateUnaryOperators(Polynomial& poly1, Polynomial& poly2);
+ void demonstrateArithmeticAssignment(Polynomial& poly1, Polynomial& poly2);
+ void demonstrateBinaryOperators(Polynomial& poly1, Polynomial& poly2);
+ void demonstrateComparisonOperators(Polynomial& poly1, Polynomial& poly2);
+ void demonstrateRootsAndStatic(Polynomial& poly1, Polynomial& poly2);
  
  // Вспомогательные функции
  void clearInputBuffer() {
@@ -32,7 +32,7 @@
  
  int main() {
      int choice;
-     Polynomka poly1, poly2; 
+     Polynomial poly1, poly2; 
      
      do {
          displayMainMenu();
@@ -48,10 +48,10 @@
          
          switch (choice) {
              case 1:
-                 createPolynomkaMenu(poly1, poly2, 1);
+                 createPolynomialMenu(poly1, poly2, 1);
                  break;
              case 2:
-                 createPolynomkaMenu(poly2, poly1, 2);
+                 createPolynomialMenu(poly2, poly1, 2);
                  break;
              case 3:
                  demonstrateUnaryOperators(poly1, poly2);
@@ -96,7 +96,7 @@
      cout << "----------------------------------------\n";
  }
  
- void createPolynomkaMenu(Polynomka& poly, Polynomka& otherPoly, int polyNumber) {
+ void createPolynomialMenu(Polynomial& poly, Polynomial& otherPoly, int polyNumber) {
      int choice;
      double a, b, c;
      
@@ -122,13 +122,13 @@
          
          switch (choice) {
              case 1:
-                 poly = Polynomka();
+                 poly = Polynomial();
                  cout << "Создан полином по умолчанию: ";
                  poly.print();
                  waitForEnter();
                  return;
              case 2:
-                 poly = Polynomka(otherPoly);
+                 poly = Polynomial(otherPoly);
                  cout << "Создан poly" << polyNumber << " как копия другого полинома: ";
                  poly.print();
                  waitForEnter();
@@ -160,7 +160,7 @@
      } while (choice != 0);
  }
  
- void demonstrateUnaryOperators(Polynomka& poly1, Polynomka& poly2) {
+ void demonstrateUnaryOperators(Polynomial& poly1, Polynomial& poly2) {
      int polyChoice;
      int operatorChoice;
      
@@ -197,7 +197,7 @@
              continue;
          }
          
-         Polynomka& selectedPoly = (polyChoice == 1) ? poly1 : poly2;
+         Polynomial& selectedPoly = (polyChoice == 1) ? poly1 : poly2;
          string polyName = (polyChoice == 1) ? "poly1" : "poly2";
          
          do {
@@ -229,7 +229,7 @@
                      cout << "\nПрефиксный инкремент (++" << polyName << "):\n";
                      cout << "До: ";
                      selectedPoly.print();
-                     Polynomka temp = selectedPoly;
+                     Polynomial temp = selectedPoly;
                      cout << "++" << polyName << " = ";
                      (++temp).print();
                      cout << "После операции исходный " << polyName << " не изменился: ";
@@ -241,7 +241,7 @@
                      cout << "\nПостфиксный инкремент (" << polyName << "++):\n";
                      cout << "До: ";
                      selectedPoly.print();
-                     Polynomka temp = selectedPoly;
+                     Polynomial temp = selectedPoly;
                      cout << polyName << "++ = ";
                      (temp++).print();
                      cout << "После операции исходный " << polyName << " не изменился: ";
@@ -253,7 +253,7 @@
                      cout << "\nПрефиксный декремент (--" << polyName << "):\n";
                      cout << "До: ";
                      selectedPoly.print();
-                     Polynomka temp = selectedPoly;
+                     Polynomial temp = selectedPoly;
                      cout << "--" << polyName << " = ";
                      (--temp).print();
                      cout << "После операции исходный " << polyName << " не изменился: ";
@@ -265,7 +265,7 @@
                      cout << "\nПостфиксный декремент (" << polyName << "--):\n";
                      cout << "До: ";
                      selectedPoly.print();
-                     Polynomka temp = selectedPoly;
+                     Polynomial temp = selectedPoly;
                      cout << polyName << "-- = ";
                      (temp--).print();
                      cout << "После операции исходный " << polyName << " не изменился: ";
@@ -285,7 +285,7 @@
      } while (polyChoice != 0);
  }
  
- void demonstrateArithmeticAssignment(Polynomka& poly1, Polynomka& poly2) {
+ void demonstrateArithmeticAssignment(Polynomial& poly1, Polynomial& poly2) {
      system("clear");
      cout << "АРИФМЕТИЧЕСКОЕ ПРИСВАИВАНИЕ\n\n";
      
@@ -296,10 +296,10 @@
      poly2.print();
      cout << endl;
      
-     Polynomka temp1 = poly1;
-     Polynomka temp2 = poly1;
-     Polynomka temp3 = poly1;
-     Polynomka temp4 = poly1;
+     Polynomial temp1 = poly1;
+     Polynomial temp2 = poly1;
+     Polynomial temp3 = poly1;
+     Polynomial temp4 = poly1;
      
      // +=
      cout << "1. Оператор += (poly1 += poly2):\n";
@@ -346,7 +346,7 @@
      waitForEnter();
  }
  
- void demonstrateBinaryOperators(Polynomka& poly1, Polynomka& poly2) {
+ void demonstrateBinaryOperators(Polynomial& poly1, Polynomial& poly2) {
      system("clear");
      cout << "БИНАРНЫЕ ОПЕРАТОРЫ\n\n";
      
@@ -358,25 +358,25 @@
      cout << endl;
      
      cout << "1. Сложение (poly1 + poly2):\n";
-     Polynomka result1 = poly1 + poly2;
+     Polynomial result1 = poly1 + poly2;
      cout << "   Результат: ";
      result1.print();
      cout << endl;
      
      cout << "2. Вычитание (poly1 - poly2):\n";
-     Polynomka result2 = poly1 - poly2;
+     Polynomial result2 = poly1 - poly2;
      cout << "   Результат: ";
      result2.print();
      cout << endl;
      
      cout << "3. Умножение на скаляр (poly1 * 3.0):\n";
-     Polynomka result3 = poly1 * 3.0;
+     Polynomial result3 = poly1 * 3.0;
      cout << "   Результат: ";
      result3.print();
      cout << endl;
      
      cout << "4. Деление на скаляр (poly1 / 2.0):\n";
-     Polynomka result4 = poly1 / 2.0;
+     Polynomial result4 = poly1 / 2.0;
      cout << "   Результат: ";
      result4.print();
      cout << endl;
@@ -390,7 +390,7 @@
      waitForEnter();
  }
  
- void demonstrateComparisonOperators(Polynomka& poly1, Polynomka& poly2) {
+ void demonstrateComparisonOperators(Polynomial& poly1, Polynomial& poly2) {
      system("clear");
      cout << "ОПЕРАТОРЫ СРАВНЕНИЯ\n\n";
      
@@ -400,33 +400,18 @@
      poly2.print();
      cout << endl;
      
-     double x;
-     cout << "Введите точку x для сравнения: ";
-     cin >> x;
-     
-     if (cin.fail()) {
-         cout << "Ошибка ввода! Используем x = 2.0\n";
-         x = 2.0;
-         clearInputBuffer();
-     }
-     
-     cout << "\nСравнение в точке x = " << x << ":\n";
-     cout << "Значение poly1(" << x << ") = " << poly1.evaluate(x) << endl;
-     cout << "Значение poly2(" << x << ") = " << poly2.evaluate(x) << endl;
-     cout << endl;
-     
-     cout << "poly1 < poly2:  " << (poly1.isLessThan(poly2, x) ? "true" : "false") << endl;
-     cout << "poly1 > poly2:  " << (poly1.isGreaterThan(poly2, x) ? "true" : "false") << endl;
-     cout << "poly1 <= poly2: " << (poly1.isLessOrEqual(poly2, x) ? "true" : "false") << endl;
-     cout << "poly1 >= poly2: " << (poly1.isGreaterOrEqual(poly2, x) ? "true" : "false") << endl;
-     cout << "poly1 == poly2: " << (poly1.isEqual(poly2, x) ? "true" : "false") << endl;
-     cout << "poly1 != poly2: " << (poly1.isNotEqual(poly2, x) ? "true" : "false") << endl;
+     cout << "Сравнение полиномов по коэффициентам:\n";
+     cout << "poly1 < poly2:  " << (poly1 < poly2 ? "true" : "false") << endl;
+     cout << "poly1 > poly2:  " << (poly1 > poly2 ? "true" : "false") << endl;
+     cout << "poly1 <= poly2: " << (poly1 <= poly2 ? "true" : "false") << endl;
+     cout << "poly1 >= poly2: " << (poly1 >= poly2 ? "true" : "false") << endl;
+     cout << "poly1 == poly2: " << (poly1 == poly2 ? "true" : "false") << endl;
+     cout << "poly1 != poly2: " << (poly1 != poly2 ? "true" : "false") << endl;
      
      waitForEnter();
  }
  
- 
- void demonstrateRootsAndStatic(Polynomka& poly1, Polynomka& poly2) {
+ void demonstrateRootsAndStatic(Polynomial& poly1, Polynomial& poly2) {
      int polyChoice;
      
      do {
@@ -440,7 +425,7 @@
          poly2.print();
          cout << endl;
          
-         cout << "Количество поисков корней до: " << Polynomka::getRootsCalculationCount() << endl;
+         cout << "Количество поисков корней до: " << Polynomial::getRootsCalculationCount() << endl;
          cout << endl;
          
          cout << "Выберите полином для поиска корней:\n";
@@ -481,7 +466,7 @@
                  continue;
          }
          
-         cout << "\nКоличество поисков корней после: " << Polynomka::getRootsCalculationCount() << endl;
+         cout << "\nКоличество поисков корней после: " << Polynomial::getRootsCalculationCount() << endl;
          waitForEnter();
          
      } while (polyChoice != 0);

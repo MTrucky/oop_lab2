@@ -1,18 +1,18 @@
 /**
- * @file Polynomka.h
- * @brief Заголовочный файл класса Polynomka для работы с многочленами 2-й степени
+ * @file Polynomial.h
+ * @brief Заголовочный файл класса Polynomial для работы с многочленами 2-й степени
  */
 
- #ifndef POLYNOMKA_H
- #define POLYNOMKA_H
+ #ifndef POLYNOMIAL_H
+ #define POLYNOMIAL_H
  
  #include <cstddef>
  
  /**
-  * @class Polynomka
+  * @class Polynomial
   * @brief Класс для работы с многочленами второй степени вида ax² + bx + c
   */
- class Polynomka {
+ class Polynomial {
  private:
      double a_; ///< Коэффициент при x²
      double b_; ///< Коэффициент при x  
@@ -26,7 +26,7 @@
      /**
       * @brief Конструктор по умолчанию. Создает нулевой многочлен 0x² + 0x + 0
       */
-     Polynomka();
+     Polynomial();
      
      /**
       * @brief Параметризованный конструктор
@@ -34,18 +34,18 @@
       * @param b Коэффициент при x
       * @param c Свободный член
       */
-     Polynomka(double a, double b, double c);
+     Polynomial(double a, double b, double c);
      
      /**
       * @brief Конструктор копирования
       * @param other Объект для копирования
       */
-     Polynomka(const Polynomka& other);
+     Polynomial(const Polynomial& other);
      
      /**
       * @brief Деструктор с выводом сообщения
       */
-     ~Polynomka();
+     ~Polynomial();
  
      // Методы доступа
      double getA() const { return a_; }
@@ -72,30 +72,30 @@
      static std::size_t getRootsCalculationCount();
  
      // Унарные операторы (4 варианта)
-     Polynomka& operator++();       // Префиксный инкремент
-     Polynomka operator++(int);     // Постфиксный инкремент  
-     Polynomka& operator--();       // Префиксный декремент
-     Polynomka operator--(int);     // Постфиксный декремент
+     Polynomial& operator++();       // Префиксный инкремент
+     Polynomial operator++(int);     // Постфиксный инкремент  
+     Polynomial& operator--();       // Префиксный декремент
+     Polynomial operator--(int);     // Постфиксный декремент
  
      // Операторы арифметического присваивания
-     Polynomka& operator+=(const Polynomka& other);
-     Polynomka& operator-=(const Polynomka& other);
-     Polynomka& operator*=(double scalar);
-     Polynomka& operator/=(double scalar);
+     Polynomial& operator+=(const Polynomial& other);
+     Polynomial& operator-=(const Polynomial& other);
+     Polynomial& operator*=(double scalar);
+     Polynomial& operator/=(double scalar);
  
-     // Бинарные арифметические операторы (реализованы через присваивание)
-     friend Polynomka operator+(Polynomka lhs, const Polynomka& rhs);
-     friend Polynomka operator-(Polynomka lhs, const Polynomka& rhs);
-     friend Polynomka operator*(Polynomka lhs, double scalar);
-     friend Polynomka operator/(Polynomka lhs, double scalar);
+     // Бинарные арифметические операторы
+     Polynomial operator+(const Polynomial& other) const;
+     Polynomial operator-(const Polynomial& other) const;
+     Polynomial operator*(double scalar) const;
+     Polynomial operator/(double scalar) const;
  
-     // Бинарные операторы сравнения (сравнивают значения в точке x)
-     bool isLessThan(const Polynomka& other, double x) const;
-     bool isGreaterThan(const Polynomka& other, double x) const;
-     bool isLessOrEqual(const Polynomka& other, double x) const;
-     bool isGreaterOrEqual(const Polynomka& other, double x) const;
-     bool isEqual(const Polynomka& other, double x) const;
-     bool isNotEqual(const Polynomka& other, double x) const;
+     // Бинарные операторы сравнения
+     bool operator<(const Polynomial& other) const;
+     bool operator>(const Polynomial& other) const;
+     bool operator<=(const Polynomial& other) const;
+     bool operator>=(const Polynomial& other) const;
+     bool operator==(const Polynomial& other) const;
+     bool operator!=(const Polynomial& other) const;
      
      /**
       * @brief Вывод многочлена в читаемом формате
@@ -103,4 +103,4 @@
      void print() const;
  };
  
- #endif 
+ #endif

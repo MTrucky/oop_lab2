@@ -1,0 +1,1230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomka Calculator: Класс Polynomka</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomka Calculator
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Калькулятор многочленов второй степени</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_polynomka.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_polynomka-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Polynomka</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для работы с многочленами второй степени вида ax² + bx + c.  
+ <a href="class_polynomka.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_polynomka_8h_source.html">Polynomka.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a0d1024d99a45d070a6259b4249fca7cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a0d1024d99a45d070a6259b4249fca7cd">Polynomka</a> ()</td></tr>
+<tr class="memdesc:a0d1024d99a45d070a6259b4249fca7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. Создает нулевой многочлен 0x² + 0x + 0.  <a href="class_polynomka.html#a0d1024d99a45d070a6259b4249fca7cd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d1024d99a45d070a6259b4249fca7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24fd6023d8641ff513b9a2599f32361d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a24fd6023d8641ff513b9a2599f32361d">Polynomka</a> (double a, double b, double c)</td></tr>
+<tr class="memdesc:a24fd6023d8641ff513b9a2599f32361d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметризованный конструктор  <a href="class_polynomka.html#a24fd6023d8641ff513b9a2599f32361d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a24fd6023d8641ff513b9a2599f32361d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b398399aa3f8f360e7307cf59bdab48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a8b398399aa3f8f360e7307cf59bdab48">Polynomka</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other)</td></tr>
+<tr class="memdesc:a8b398399aa3f8f360e7307cf59bdab48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования  <a href="class_polynomka.html#a8b398399aa3f8f360e7307cf59bdab48">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8b398399aa3f8f360e7307cf59bdab48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f44df4fd5964b1691e96d06d06746dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a9f44df4fd5964b1691e96d06d06746dc">~Polynomka</a> ()</td></tr>
+<tr class="memdesc:a9f44df4fd5964b1691e96d06d06746dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор с выводом сообщения  <a href="class_polynomka.html#a9f44df4fd5964b1691e96d06d06746dc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9f44df4fd5964b1691e96d06d06746dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4cd148017509b921d2c785414bbeb0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a7b4cd148017509b921d2c785414bbeb0">getA</a> () const</td></tr>
+<tr class="separator:a7b4cd148017509b921d2c785414bbeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6560d72f560042f2f51eb0cb1b8349"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a6e6560d72f560042f2f51eb0cb1b8349">getB</a> () const</td></tr>
+<tr class="separator:a6e6560d72f560042f2f51eb0cb1b8349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b341529ef66949216257f1a6a1b5c7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a31b341529ef66949216257f1a6a1b5c7">getC</a> () const</td></tr>
+<tr class="separator:a31b341529ef66949216257f1a6a1b5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532611014e942f4e20e8e1a0e9043a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a532611014e942f4e20e8e1a0e9043a31">setCoefficients</a> (double a, double b, double c)</td></tr>
+<tr class="separator:a532611014e942f4e20e8e1a0e9043a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3766cf3347ab76b09026bc665fd06e8c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a3766cf3347ab76b09026bc665fd06e8c">evaluate</a> (double x) const</td></tr>
+<tr class="memdesc:a3766cf3347ab76b09026bc665fd06e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление значения многочлена в точке x.  <a href="class_polynomka.html#a3766cf3347ab76b09026bc665fd06e8c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3766cf3347ab76b09026bc665fd06e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9df7e02218915bc624e900af4ce4b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a9c9df7e02218915bc624e900af4ce4b0">findRoots</a> () const</td></tr>
+<tr class="memdesc:a9c9df7e02218915bc624e900af4ce4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск и вывод корней многочлена  <a href="class_polynomka.html#a9c9df7e02218915bc624e900af4ce4b0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9c9df7e02218915bc624e900af4ce4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa988458086185864a223215748ab36af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#aa988458086185864a223215748ab36af">operator++</a> ()</td></tr>
+<tr class="separator:aa988458086185864a223215748ab36af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db730bde601a5c2288cda45c843c890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a3db730bde601a5c2288cda45c843c890">operator++</a> (int)</td></tr>
+<tr class="separator:a3db730bde601a5c2288cda45c843c890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a8b5090e8b66a1bcedfc4ed5effd69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a46a8b5090e8b66a1bcedfc4ed5effd69">operator--</a> ()</td></tr>
+<tr class="separator:a46a8b5090e8b66a1bcedfc4ed5effd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c9d711f243552492a041e186f4f854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a51c9d711f243552492a041e186f4f854">operator--</a> (int)</td></tr>
+<tr class="separator:a51c9d711f243552492a041e186f4f854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa683f08ad6e2eb297cbcc04d4c54a352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#aa683f08ad6e2eb297cbcc04d4c54a352">operator+=</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other)</td></tr>
+<tr class="separator:aa683f08ad6e2eb297cbcc04d4c54a352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46992e183ef8f8d2655eb54e461c5c75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a46992e183ef8f8d2655eb54e461c5c75">operator-=</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other)</td></tr>
+<tr class="separator:a46992e183ef8f8d2655eb54e461c5c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a03e47babced02f870c63c12a56db8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a8a03e47babced02f870c63c12a56db8a">operator*=</a> (double scalar)</td></tr>
+<tr class="separator:a8a03e47babced02f870c63c12a56db8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b800dcd543115982c6150b7094563f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a44b800dcd543115982c6150b7094563f">operator/=</a> (double scalar)</td></tr>
+<tr class="separator:a44b800dcd543115982c6150b7094563f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252ad12e3a0f46b5dc2447181e933b9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a252ad12e3a0f46b5dc2447181e933b9c">isLessThan</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other, double x) const</td></tr>
+<tr class="separator:a252ad12e3a0f46b5dc2447181e933b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303f0a0bef36f3a25df0d2ec3346186d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a303f0a0bef36f3a25df0d2ec3346186d">isGreaterThan</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other, double x) const</td></tr>
+<tr class="separator:a303f0a0bef36f3a25df0d2ec3346186d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa782750600a006166e1f65341ca63092"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#aa782750600a006166e1f65341ca63092">isLessOrEqual</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other, double x) const</td></tr>
+<tr class="separator:aa782750600a006166e1f65341ca63092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92da6c8074401e8f402dfd3d08b9a36f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a92da6c8074401e8f402dfd3d08b9a36f">isGreaterOrEqual</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other, double x) const</td></tr>
+<tr class="separator:a92da6c8074401e8f402dfd3d08b9a36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d447691671292c7d8cd212984f32af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a38d447691671292c7d8cd212984f32af">isEqual</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other, double x) const</td></tr>
+<tr class="separator:a38d447691671292c7d8cd212984f32af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fbafaf4c2adfa1f1a88dbc9f85660f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#ad8fbafaf4c2adfa1f1a88dbc9f85660f">isNotEqual</a> (const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;other, double x) const</td></tr>
+<tr class="separator:ad8fbafaf4c2adfa1f1a88dbc9f85660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4430a66effecba4e28182419b20ecc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a9f4430a66effecba4e28182419b20ecc">print</a> () const</td></tr>
+<tr class="memdesc:a9f4430a66effecba4e28182419b20ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод многочлена в читаемом формате  <a href="class_polynomka.html#a9f4430a66effecba4e28182419b20ecc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9f4430a66effecba4e28182419b20ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:ad6bafdd85a5868043bc900bcd0b1f92a"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#ad6bafdd85a5868043bc900bcd0b1f92a">getRootsCalculationCount</a> ()</td></tr>
+<tr class="memdesc:ad6bafdd85a5868043bc900bcd0b1f92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение количества вызовов поиска корней  <a href="class_polynomka.html#ad6bafdd85a5868043bc900bcd0b1f92a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad6bafdd85a5868043bc900bcd0b1f92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a94be50dd35414a4862b97569aa698f87"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a94be50dd35414a4862b97569aa698f87">a_</a></td></tr>
+<tr class="memdesc:a94be50dd35414a4862b97569aa698f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент при x²  <a href="class_polynomka.html#a94be50dd35414a4862b97569aa698f87">Подробнее...</a><br /></td></tr>
+<tr class="separator:a94be50dd35414a4862b97569aa698f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe09c597f83ec4801e0d0f73389874f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a6fe09c597f83ec4801e0d0f73389874f">b_</a></td></tr>
+<tr class="memdesc:a6fe09c597f83ec4801e0d0f73389874f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент при x <br  />
+  <a href="class_polynomka.html#a6fe09c597f83ec4801e0d0f73389874f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6fe09c597f83ec4801e0d0f73389874f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6989f88b9b9a344cf42ec019066bf7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a4b6989f88b9b9a344cf42ec019066bf7">c_</a></td></tr>
+<tr class="memdesc:a4b6989f88b9b9a344cf42ec019066bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свободный член  <a href="class_polynomka.html#a4b6989f88b9b9a344cf42ec019066bf7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4b6989f88b9b9a344cf42ec019066bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a166b7038c476ff61012167767bfa916c"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a166b7038c476ff61012167767bfa916c">rootsCalculationCounter_</a> = 0</td></tr>
+<tr class="memdesc:a166b7038c476ff61012167767bfa916c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статический счетчик вызовов поиска корней  <a href="class_polynomka.html#a166b7038c476ff61012167767bfa916c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a166b7038c476ff61012167767bfa916c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:aad0c5e489f76e42517a8137e07d00963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#aad0c5e489f76e42517a8137e07d00963">operator+</a> (<a class="el" href="class_polynomka.html">Polynomka</a> lhs, const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;rhs)</td></tr>
+<tr class="separator:aad0c5e489f76e42517a8137e07d00963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c114ce0c6ff1219dec08cf63a37ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#ac7c114ce0c6ff1219dec08cf63a37ccd">operator-</a> (<a class="el" href="class_polynomka.html">Polynomka</a> lhs, const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;rhs)</td></tr>
+<tr class="separator:ac7c114ce0c6ff1219dec08cf63a37ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de19a2aab82a3c0a2ae859ff508959f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#a8de19a2aab82a3c0a2ae859ff508959f">operator*</a> (<a class="el" href="class_polynomka.html">Polynomka</a> lhs, double scalar)</td></tr>
+<tr class="separator:a8de19a2aab82a3c0a2ae859ff508959f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad789f7a437b73799b928e6361a275a8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomka.html#ad789f7a437b73799b928e6361a275a8c">operator/</a> (<a class="el" href="class_polynomka.html">Polynomka</a> lhs, double scalar)</td></tr>
+<tr class="separator:ad789f7a437b73799b928e6361a275a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для работы с многочленами второй степени вида ax² + bx + c. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00015">15</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a0d1024d99a45d070a6259b4249fca7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1024d99a45d070a6259b4249fca7cd">&#9670;&nbsp;</a></span>Polynomka() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Polynomka::Polynomka </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор по умолчанию. Создает нулевой многочлен 0x² + 0x + 0. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a id="a24fd6023d8641ff513b9a2599f32361d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24fd6023d8641ff513b9a2599f32361d">&#9670;&nbsp;</a></span>Polynomka() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Polynomka::Polynomka </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Параметризованный конструктор </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Коэффициент при x² </td></tr>
+    <tr><td class="paramname">b</td><td>Коэффициент при x </td></tr>
+    <tr><td class="paramname">c</td><td>Свободный член </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00020">20</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a>.</p>
+
+</div>
+</div>
+<a id="a8b398399aa3f8f360e7307cf59bdab48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b398399aa3f8f360e7307cf59bdab48">&#9670;&nbsp;</a></span>Polynomka() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Polynomka::Polynomka </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор копирования </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Объект для копирования </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00026">26</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a>.</p>
+
+</div>
+</div>
+<a id="a9f44df4fd5964b1691e96d06d06746dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f44df4fd5964b1691e96d06d06746dc">&#9670;&nbsp;</a></span>~Polynomka()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Polynomka::~Polynomka </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Деструктор с выводом сообщения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00032">32</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a3766cf3347ab76b09026bc665fd06e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3766cf3347ab76b09026bc665fd06e8c">&#9670;&nbsp;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисление значения многочлена в точке x. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Точка для вычисления </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение многочлена в точке x </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00045">45</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00203">isEqual()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00198">isGreaterOrEqual()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00188">isGreaterThan()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00193">isLessOrEqual()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00183">isLessThan()</a> и <a class="el" href="_polynomka_8cpp_source.html#l00208">isNotEqual()</a>.</p>
+
+</div>
+</div>
+<a id="a9c9df7e02218915bc624e900af4ce4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9df7e02218915bc624e900af4ce4b0">&#9670;&nbsp;</a></span>findRoots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Polynomka::findRoots </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск и вывод корней многочлена </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00050">50</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a>, <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>, <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a> и <a class="el" href="_polynomka_8h_source.html#l00021">rootsCalculationCounter_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00429">demonstrateRootsAndStatic()</a>.</p>
+
+</div>
+</div>
+<a id="a7b4cd148017509b921d2c785414bbeb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4cd148017509b921d2c785414bbeb0">&#9670;&nbsp;</a></span>getA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::getA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00051">51</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>.</p>
+
+</div>
+</div>
+<a id="a6e6560d72f560042f2f51eb0cb1b8349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6560d72f560042f2f51eb0cb1b8349">&#9670;&nbsp;</a></span>getB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::getB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00052">52</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00018">b_</a>.</p>
+
+</div>
+</div>
+<a id="a31b341529ef66949216257f1a6a1b5c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b341529ef66949216257f1a6a1b5c7">&#9670;&nbsp;</a></span>getC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::getC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00053">53</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="ad6bafdd85a5868043bc900bcd0b1f92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bafdd85a5868043bc900bcd0b1f92a">&#9670;&nbsp;</a></span>getRootsCalculationCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Polynomka::getRootsCalculationCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение количества вызовов поиска корней </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество вызовов </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00084">84</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00021">rootsCalculationCounter_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00429">demonstrateRootsAndStatic()</a>.</p>
+
+</div>
+</div>
+<a id="a38d447691671292c7d8cd212984f32af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d447691671292c7d8cd212984f32af">&#9670;&nbsp;</a></span>isEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Polynomka::isEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00203">203</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>.</p>
+
+</div>
+</div>
+<a id="a92da6c8074401e8f402dfd3d08b9a36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92da6c8074401e8f402dfd3d08b9a36f">&#9670;&nbsp;</a></span>isGreaterOrEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Polynomka::isGreaterOrEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00198">198</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>.</p>
+
+</div>
+</div>
+<a id="a303f0a0bef36f3a25df0d2ec3346186d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303f0a0bef36f3a25df0d2ec3346186d">&#9670;&nbsp;</a></span>isGreaterThan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Polynomka::isGreaterThan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00188">188</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>.</p>
+
+</div>
+</div>
+<a id="aa782750600a006166e1f65341ca63092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa782750600a006166e1f65341ca63092">&#9670;&nbsp;</a></span>isLessOrEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Polynomka::isLessOrEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00193">193</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>.</p>
+
+</div>
+</div>
+<a id="a252ad12e3a0f46b5dc2447181e933b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252ad12e3a0f46b5dc2447181e933b9c">&#9670;&nbsp;</a></span>isLessThan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Polynomka::isLessThan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00183">183</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>.</p>
+
+</div>
+</div>
+<a id="ad8fbafaf4c2adfa1f1a88dbc9f85660f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fbafaf4c2adfa1f1a88dbc9f85660f">&#9670;&nbsp;</a></span>isNotEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Polynomka::isNotEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00208">208</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>.</p>
+
+</div>
+</div>
+<a id="a8a03e47babced02f870c63c12a56db8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a03e47babced02f870c63c12a56db8a">&#9670;&nbsp;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> &amp; Polynomka::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00139">139</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="aa988458086185864a223215748ab36af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa988458086185864a223215748ab36af">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> &amp; Polynomka::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00089">89</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="a3db730bde601a5c2288cda45c843c890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db730bde601a5c2288cda45c843c890">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> Polynomka::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00097">97</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="aa683f08ad6e2eb297cbcc04d4c54a352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa683f08ad6e2eb297cbcc04d4c54a352">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> &amp; Polynomka::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00123">123</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="a46a8b5090e8b66a1bcedfc4ed5effd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a8b5090e8b66a1bcedfc4ed5effd69">&#9670;&nbsp;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> &amp; Polynomka::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00106">106</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="a51c9d711f243552492a041e186f4f854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c9d711f243552492a041e186f4f854">&#9670;&nbsp;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> Polynomka::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00114">114</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="a46992e183ef8f8d2655eb54e461c5c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46992e183ef8f8d2655eb54e461c5c75">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> &amp; Polynomka::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00131">131</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="a44b800dcd543115982c6150b7094563f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b800dcd543115982c6150b7094563f">&#9670;&nbsp;</a></span>operator/=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> &amp; Polynomka::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00147">147</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+</div>
+</div>
+<a id="a9f4430a66effecba4e28182419b20ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4430a66effecba4e28182419b20ecc">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Polynomka::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вывод многочлена в читаемом формате </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00212">212</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00099">createPolynomkaMenu()</a>, <a class="el" href="main_8cpp_source.html#l00288">demonstrateArithmeticAssignment()</a>, <a class="el" href="main_8cpp_source.html#l00349">demonstrateBinaryOperators()</a>, <a class="el" href="main_8cpp_source.html#l00393">demonstrateComparisonOperators()</a>, <a class="el" href="main_8cpp_source.html#l00429">demonstrateRootsAndStatic()</a>, <a class="el" href="main_8cpp_source.html#l00163">demonstrateUnaryOperators()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00050">findRoots()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00020">Polynomka()</a> и <a class="el" href="_polynomka_8cpp_source.html#l00032">~Polynomka()</a>.</p>
+
+</div>
+</div>
+<a id="a532611014e942f4e20e8e1a0e9043a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532611014e942f4e20e8e1a0e9043a31">&#9670;&nbsp;</a></span>setCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Polynomka::setCoefficients </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00038">38</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_polynomka_8h_source.html#l00017">a_</a>, <a class="el" href="_polynomka_8h_source.html#l00018">b_</a> и <a class="el" href="_polynomka_8h_source.html#l00019">c_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00099">createPolynomkaMenu()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a8de19a2aab82a3c0a2ae859ff508959f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de19a2aab82a3c0a2ae859ff508959f">&#9670;&nbsp;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00169">169</a></p>
+
+</div>
+</div>
+<a id="aad0c5e489f76e42517a8137e07d00963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0c5e489f76e42517a8137e07d00963">&#9670;&nbsp;</a></span>operator+</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00157">157</a></p>
+
+</div>
+</div>
+<a id="ac7c114ce0c6ff1219dec08cf63a37ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c114ce0c6ff1219dec08cf63a37ccd">&#9670;&nbsp;</a></span>operator-</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_polynomka.html">Polynomka</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00163">163</a></p>
+
+</div>
+</div>
+<a id="ad789f7a437b73799b928e6361a275a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad789f7a437b73799b928e6361a275a8c">&#9670;&nbsp;</a></span>operator/</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_polynomka.html">Polynomka</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_polynomka.html">Polynomka</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a> строка <a class="el" href="_polynomka_8cpp_source.html#l00175">175</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a94be50dd35414a4862b97569aa698f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94be50dd35414a4862b97569aa698f87">&#9670;&nbsp;</a></span>a_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::a_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент при x² </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00017">17</a></p>
+
+<p class="reference">Используется в <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00050">findRoots()</a>, <a class="el" href="_polynomka_8h_source.html#l00051">getA()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00139">operator*=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00089">operator++()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00123">operator+=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00106">operator--()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00131">operator-=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00147">operator/=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a> и <a class="el" href="_polynomka_8cpp_source.html#l00038">setCoefficients()</a>.</p>
+
+</div>
+</div>
+<a id="a6fe09c597f83ec4801e0d0f73389874f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe09c597f83ec4801e0d0f73389874f">&#9670;&nbsp;</a></span>b_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::b_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент при x <br  />
+ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00018">18</a></p>
+
+<p class="reference">Используется в <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00050">findRoots()</a>, <a class="el" href="_polynomka_8h_source.html#l00052">getB()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00139">operator*=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00089">operator++()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00123">operator+=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00106">operator--()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00131">operator-=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00147">operator/=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a> и <a class="el" href="_polynomka_8cpp_source.html#l00038">setCoefficients()</a>.</p>
+
+</div>
+</div>
+<a id="a4b6989f88b9b9a344cf42ec019066bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6989f88b9b9a344cf42ec019066bf7">&#9670;&nbsp;</a></span>c_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Polynomka::c_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Свободный член </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00019">19</a></p>
+
+<p class="reference">Используется в <a class="el" href="_polynomka_8cpp_source.html#l00045">evaluate()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00050">findRoots()</a>, <a class="el" href="_polynomka_8h_source.html#l00053">getC()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00139">operator*=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00089">operator++()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00123">operator+=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00106">operator--()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00131">operator-=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00147">operator/=()</a>, <a class="el" href="_polynomka_8cpp_source.html#l00212">print()</a> и <a class="el" href="_polynomka_8cpp_source.html#l00038">setCoefficients()</a>.</p>
+
+</div>
+</div>
+<a id="a166b7038c476ff61012167767bfa916c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166b7038c476ff61012167767bfa916c">&#9670;&nbsp;</a></span>rootsCalculationCounter_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Polynomka::rootsCalculationCounter_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Статический счетчик вызовов поиска корней </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_polynomka_8h_source.html">Polynomka.h</a> строка <a class="el" href="_polynomka_8h_source.html#l00021">21</a></p>
+
+<p class="reference">Используется в <a class="el" href="_polynomka_8cpp_source.html#l00050">findRoots()</a> и <a class="el" href="_polynomka_8cpp_source.html#l00084">getRootsCalculationCount()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="_polynomka_8h_source.html">Polynomka.h</a></li>
+<li><a class="el" href="_polynomka_8cpp_source.html">Polynomka.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_polynomka.html">Polynomka</a></li>
+    <li class="footer">Документация по Polynomka Calculator. Последние изменения: Ср 5 Ноя 2025 11:16:45. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
