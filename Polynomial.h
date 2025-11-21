@@ -14,14 +14,14 @@
   */
  class Polynomial {
  private:
-     double a_; ///< Коэффициент при x²
-     double b_; ///< Коэффициент при x  
-     double c_; ///< Свободный член
+     double a_; ///<  при x²
+     double b_; ///<  при x  
+     double c_; ///< Свободный
      
      static std::size_t rootsCalculationCounter_; ///< Статический счетчик вызовов поиска корней
  
  public:
-     // Конструкторы (3 штуки)
+     // Конструкторы 3 штуки
      
      /**
       * @brief Конструктор по умолчанию. Создает нулевой многочлен 0x² + 0x + 0

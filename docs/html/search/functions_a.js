@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waitforenter_81',['waitForEnter',['../main_8cpp.html#ab80f005039b55cdbdbea52bbbad3c622',1,'main.cpp']]]
+  ['_7epolynomial_78',['~Polynomial',['../class_polynomial.html#a96130e913259691bd82b7d910d586169',1,'Polynomial']]]
 ];

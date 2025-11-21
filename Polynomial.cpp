@@ -11,27 +11,19 @@
  
  std::size_t Polynomial::rootsCalculationCounter_ = 0;
  
- // Конструктор по умолчанию
  Polynomial::Polynomial() : a_(0), b_(0), c_(0) {
-     cout << "Вызван конструктор по умолчанию. Создан многочлен: 0x² + 0x + 0" << endl;
  }
  
- // Параметризованный конструктор
  Polynomial::Polynomial(double a, double b, double c) : a_(a), b_(b), c_(c) {
-     cout << "Вызван параметризованный конструктор. Создан многочлен: ";
-     print();
+    //  print();
  }
  
- // Конструктор копирования
  Polynomial::Polynomial(const Polynomial& other) : a_(other.a_), b_(other.b_), c_(other.c_) {
-     cout << "Вызван конструктор копирования. Скопирован многочлен: ";
-     print();
+    //  print();
  }
  
- // Деструктор
  Polynomial::~Polynomial() {
-     cout << "Вызван деструктор. Уничтожен многочлен: ";
-     print();
+    //  print();
  }
  
  void Polynomial::setCoefficients(double a, double b, double c) {
@@ -40,12 +32,10 @@
      c_ = c;
  }
  
- // Вычисление значения в точке x
  double Polynomial::evaluate(double x) const {
      return a_ * x * x + b_ * x + c_;
  }
  
- // корней многочлена
  void Polynomial::findRoots() const {
      rootsCalculationCounter_++; 
      
@@ -152,67 +142,123 @@
      return *this;
  }
  
- // + (реализован через +=)
+ // + 
  Polynomial Polynomial::operator+(const Polynomial& other) const {
      Polynomial result(*this);
      result += other;
      return result;
  }
  
- // - (реализован через -=)
+ // - 
  Polynomial Polynomial::operator-(const Polynomial& other) const {
      Polynomial result(*this);
      result -= other;
      return result;
  }
  
- // * (умножение на скаляр, реализован через *=)
+ // * 
  Polynomial Polynomial::operator*(double scalar) const {
      Polynomial result(*this);
      result *= scalar;
      return result;
  }
  
- // / (деление на скаляр, реализован через /=)
+ // / 
  Polynomial Polynomial::operator/(double scalar) const {
      Polynomial result(*this);
      result /= scalar;
      return result;
  }
  
- // Операторы сравнения
  
  // <
  bool Polynomial::operator<(const Polynomial& other) const {
-     // Сравниваем по коэффициентам
-     if (a_ != other.a_) return a_ < other.a_;
-     if (b_ != other.b_) return b_ < other.b_;
-     return c_ < other.c_;
+     double x;
+     cout << "Введите значение x для сравнения: ";
+     cin >> x;
+     
+     double value1 = evaluate(x);
+     double value2 = other.evaluate(x);
+     
+     cout << "Значение poly1 в точке " << x << ": " << value1 << endl;
+     cout << "Значение poly2 в точке " << x << ": " << value2 << endl;
+     
+     return value1 < value2;
  }
  
  // >
  bool Polynomial::operator>(const Polynomial& other) const {
-     return other < *this;
+     double x;
+     cout << "Введите значение x для сравнения: ";
+     cin >> x;
+     
+     double value1 = evaluate(x);
+     double value2 = other.evaluate(x);
+     
+     cout << "Значение poly1 в точке " << x << ": " << value1 << endl;
+     cout << "Значение poly2 в точке " << x << ": " << value2 << endl;
+     
+     return value1 > value2;
  }
  
  // <=
  bool Polynomial::operator<=(const Polynomial& other) const {
-     return !(*this > other);
+     double x;
+     cout << "Введите значение x для сравнения: ";
+     cin >> x;
+     
+     double value1 = evaluate(x);
+     double value2 = other.evaluate(x);
+     
+     cout << "Значение poly1 в точке " << x << ": " << value1 << endl;
+     cout << "Значение poly2 в точке " << x << ": " << value2 << endl;
+     
+     return value1 <= value2;
  }
  
  // >=
  bool Polynomial::operator>=(const Polynomial& other) const {
-     return !(*this < other);
+     double x;
+     cout << "Введите значение x для сравнения: ";
+     cin >> x;
+     
+     double value1 = evaluate(x);
+     double value2 = other.evaluate(x);
+     
+     cout << "Значение poly1 в точке " << x << ": " << value1 << endl;
+     cout << "Значение poly2 в точке " << x << ": " << value2 << endl;
+     
+     return value1 >= value2;
  }
  
  // ==
  bool Polynomial::operator==(const Polynomial& other) const {
-     return a_ == other.a_ && b_ == other.b_ && c_ == other.c_;
+     double x;
+     cout << "Введите значение x для сравнения: ";
+     cin >> x;
+     
+     double value1 = evaluate(x);
+     double value2 = other.evaluate(x);
+     
+     cout << "Значение poly1 в точке " << x << ": " << value1 << endl;
+     cout << "Значение poly2 в точке " << x << ": " << value2 << endl;
+     
+     return value1 == value2;
  }
  
  // !=
  bool Polynomial::operator!=(const Polynomial& other) const {
-     return !(*this == other);
+     double x;
+     cout << "Введите значение x для сравнения: ";
+     cin >> x;
+     
+     double value1 = evaluate(x);
+     double value2 = other.evaluate(x);
+     
+     cout << "Значение poly1 в точке " << x << ": " << value1 << endl;
+     cout << "Значение poly2 в точке " << x << ": " << value2 << endl;
+     
+     return value1 != value2;
  }
  
  void Polynomial::print() const {

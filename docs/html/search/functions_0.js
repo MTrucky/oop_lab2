@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['clearinputbuffer_47',['clearInputBuffer',['../main_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb',1,'main.cpp']]],
-  ['createpolynomkamenu_48',['createPolynomkaMenu',['../main_8cpp.html#ade5f94879677c03b2136ecaa80d08370',1,'main.cpp']]]
+  ['clearinputbuffer_43',['clearInputBuffer',['../main_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb',1,'main.cpp']]],
+  ['createpolynomialmenu_44',['createPolynomialMenu',['../main_8cpp.html#afcd8a7028a976f2784e087065e0f915c',1,'main.cpp']]]
 ];

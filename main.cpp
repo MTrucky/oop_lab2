@@ -9,7 +9,7 @@
  
  using namespace std;
  
- // Прототипы функций меню
+ // функции меню
  void displayMainMenu();
  void createPolynomialMenu(Polynomial& poly, Polynomial& otherPoly, int polyNumber);
  void demonstrateUnaryOperators(Polynomial& poly1, Polynomial& poly2);
@@ -41,7 +41,7 @@
          
          if (cin.fail()) {
              clearInputBuffer();
-             cout << "Ошибка ввода! Пожалуйста, введите число.\n";
+             cout << "Ошибка ввода. Введите число.\n";
              waitForEnter();
              continue;
          }
@@ -84,7 +84,6 @@
  void displayMainMenu() {
      system("clear"); 
      cout << "=== КАЛЬКУЛЯТОР МНОГОЧЛЕНОВ 2-Й СТЕПЕНИ ===\n";
-     cout << "=== ЛАБОРАТОРНАЯ РАБОТА №2 ===\n\n";
      cout << "1. Создать/изменить poly1\n";
      cout << "2. Создать/изменить poly2\n";
      cout << "3. Демонстрация унарных операторов\n";
@@ -93,7 +92,6 @@
      cout << "6. Демонстрация операторов сравнения\n";
      cout << "7. Поиск корней и статическое поле\n";
      cout << "0. Выход\n";
-     cout << "----------------------------------------\n";
  }
  
  void createPolynomialMenu(Polynomial& poly, Polynomial& otherPoly, int polyNumber) {
@@ -219,7 +217,7 @@
              
              if (cin.fail()) {
                  clearInputBuffer();
-                 cout << "Ошибка ввода!\n";
+                 cout << "Ошибка ввода!!\n";
                  waitForEnter();
                  continue;
              }
@@ -227,49 +225,29 @@
              switch (operatorChoice) {
                  case 1: {
                      cout << "\nПрефиксный инкремент (++" << polyName << "):\n";
-                     cout << "До: ";
-                     selectedPoly.print();
-                     Polynomial temp = selectedPoly;
                      cout << "++" << polyName << " = ";
-                     (++temp).print();
-                     cout << "После операции исходный " << polyName << " не изменился: ";
-                     selectedPoly.print();
+                     (++selectedPoly).print();
                      waitForEnter();
                      break;
                  }
                  case 2: {
                      cout << "\nПостфиксный инкремент (" << polyName << "++):\n";
-                     cout << "До: ";
-                     selectedPoly.print();
-                     Polynomial temp = selectedPoly;
                      cout << polyName << "++ = ";
-                     (temp++).print();
-                     cout << "После операции исходный " << polyName << " не изменился: ";
-                     selectedPoly.print();
+                     (selectedPoly++).print();
                      waitForEnter();
                      break;
                  }
                  case 3: {
                      cout << "\nПрефиксный декремент (--" << polyName << "):\n";
-                     cout << "До: ";
-                     selectedPoly.print();
-                     Polynomial temp = selectedPoly;
                      cout << "--" << polyName << " = ";
-                     (--temp).print();
-                     cout << "После операции исходный " << polyName << " не изменился: ";
-                     selectedPoly.print();
+                     (--selectedPoly).print();
                      waitForEnter();
                      break;
                  }
                  case 4: {
                      cout << "\nПостфиксный декремент (" << polyName << "--):\n";
-                     cout << "До: ";
-                     selectedPoly.print();
-                     Polynomial temp = selectedPoly;
                      cout << polyName << "-- = ";
-                     (temp--).print();
-                     cout << "После операции исходный " << polyName << " не изменился: ";
-                     selectedPoly.print();
+                     (selectedPoly--).print();
                      waitForEnter();
                      break;
                  }
@@ -286,109 +264,124 @@
  }
  
  void demonstrateArithmeticAssignment(Polynomial& poly1, Polynomial& poly2) {
-     system("clear");
-     cout << "АРИФМЕТИЧЕСКОЕ ПРИСВАИВАНИЕ\n\n";
-     
-     cout << "Исходные полиномы:\n";
-     cout << "poly1: ";
-     poly1.print();
-     cout << "poly2: ";
-     poly2.print();
-     cout << endl;
-     
-     Polynomial temp1 = poly1;
-     Polynomial temp2 = poly1;
-     Polynomial temp3 = poly1;
-     Polynomial temp4 = poly1;
-     
-     // +=
-     cout << "1. Оператор += (poly1 += poly2):\n";
-     cout << "   До: ";
-     temp1.print();
-     temp1 += poly2;
-     cout << "   После: ";
-     temp1.print();
-     cout << endl;
-     
-     // -=
-     cout << "2. Оператор -= (poly1 -= poly2):\n";
-     cout << "   До: ";
-     temp2.print();
-     temp2 -= poly2;
-     cout << "   После: ";
-     temp2.print();
-     cout << endl;
-     
-     // *=
-     cout << "3. Оператор *= (poly1 *= 2.5):\n";
-     cout << "   До: ";
-     temp3.print();
-     temp3 *= 2.5;
-     cout << "   После: ";
-     temp3.print();
-     cout << endl;
-     
-     // /=
-     cout << "4. Оператор /= (poly1 /= 2.0):\n";
-     cout << "   До: ";
-     temp4.print();
-     temp4 /= 2.0;
-     cout << "   После: ";
-     temp4.print();
-     cout << endl;
-     
-     cout << "Исходные полиномы не изменились:\n";
-     cout << "poly1: ";
-     poly1.print();
-     cout << "poly2: ";
-     poly2.print();
-     
-     waitForEnter();
- }
+    system("clear");
+    cout << "АРИФМЕТИЧЕСКОЕ ПРИСВАИВАНИЕ (ИЗМЕНЯЕТ ОБЪЕКТЫ)\n\n";
+    
+    cout << "Исходные полиномы:\n";
+    cout << "poly1: ";
+    poly1.print();
+    cout << "poly2: ";
+    poly2.print();
+    cout << endl;
+    
+    // сохр значения для демонстрации изменений
+    Polynomial original1 = poly1;
+    Polynomial original2 = poly2;
+    
+    cout << "1. poly1 += poly2:\n";
+    cout << "   До: poly1 = ";
+    poly1.print();
+    poly1 += poly2;
+    cout << "   После: poly1 = ";
+    poly1.print();
+    cout << endl;
+    
+    // Восстанавл для следующей демонстрации
+    poly1 = original1;
+    
+    cout << "2. poly1 -= poly2:\n";
+    cout << "   До: poly1 = ";
+    poly1.print();
+    poly1 -= poly2;
+    cout << "   После: poly1 = ";
+    poly1.print();
+    cout << endl;
+    
+    poly1 = original1;
+    double scalar;
+    cout << "3. poly1 *= scalar:\n";
+    cout << "   Введите скаляр: ";
+    cin >> scalar;
+    cout << "   До: poly1 = ";
+    poly1.print();
+    poly1 *= scalar;
+    cout << "   После: poly1 = ";
+    poly1.print();
+    cout << endl;
+    
+    poly1 = original1;
+    cout << "4. poly1 /= scalar:\n";
+    cout << "   Введите скаляр: ";
+    cin >> scalar;
+    if (scalar != 0) {
+        cout << "   До: poly1 = ";
+        poly1.print();
+        poly1 /= scalar;
+        cout << "   После: poly1 = ";
+        poly1.print();
+    }
+    
+    // Восстанавливаем исходные значения
+    poly1 = original1;
+    poly2 = original2;
+    
+    waitForEnter();
+}
  
- void demonstrateBinaryOperators(Polynomial& poly1, Polynomial& poly2) {
-     system("clear");
-     cout << "БИНАРНЫЕ ОПЕРАТОРЫ\n\n";
-     
-     cout << "Исходные полиномы:\n";
-     cout << "poly1: ";
-     poly1.print();
-     cout << "poly2: ";
-     poly2.print();
-     cout << endl;
-     
-     cout << "1. Сложение (poly1 + poly2):\n";
-     Polynomial result1 = poly1 + poly2;
-     cout << "   Результат: ";
-     result1.print();
-     cout << endl;
-     
-     cout << "2. Вычитание (poly1 - poly2):\n";
-     Polynomial result2 = poly1 - poly2;
-     cout << "   Результат: ";
-     result2.print();
-     cout << endl;
-     
-     cout << "3. Умножение на скаляр (poly1 * 3.0):\n";
-     Polynomial result3 = poly1 * 3.0;
-     cout << "   Результат: ";
-     result3.print();
-     cout << endl;
-     
-     cout << "4. Деление на скаляр (poly1 / 2.0):\n";
-     Polynomial result4 = poly1 / 2.0;
-     cout << "   Результат: ";
-     result4.print();
-     cout << endl;
-     
-     cout << "Исходные полиномы не изменились:\n";
-     cout << "poly1: ";
-     poly1.print();
-     cout << "poly2: ";
-     poly2.print();
-     
-     waitForEnter();
- }
+void demonstrateBinaryOperators(Polynomial& poly1, Polynomial& poly2) {
+    system("clear");
+    cout << "БИНАРНЫЕ ОПЕРАТОРЫ (СОЗДАЮТ НОВЫЕ ОБЪЕКТЫ)\n\n";
+    
+    cout << "Исходные полиномы:\n";
+    cout << "poly1: ";
+    poly1.print();
+    cout << "poly2: ";
+    poly2.print();
+    cout << endl;
+    
+    cout << "1. Сложение (poly1 + poly2):\n";
+    Polynomial result1 = poly1 + poly2;
+    cout << "   Результат: ";
+    result1.print();
+    cout << endl;
+    
+    cout << "2. Вычитание (poly1 - poly2):\n";
+    Polynomial result2 = poly1 - poly2;
+    cout << "   Результат: ";
+    result2.print();
+    cout << endl;
+    
+    double scalar_mult;
+    cout << "3. Умножение на скаляр (poly1 * scalar):\n";
+    cout << "   Введите скаляр для умножения: ";
+    cin >> scalar_mult;
+    if (cin.fail()) {
+        cout << "   Ошибка ввода скаляра!\n";
+        clearInputBuffer();
+    } else {
+        Polynomial result3 = poly1 * scalar_mult;
+        cout << "   Результат: ";
+        result3.print();
+    }
+    cout << endl;
+    
+    double scalar_div;
+    cout << "4. Деление на скаляр (poly1 / scalar):\n";
+    cout << "   Введите скаляр для деления: ";
+    cin >> scalar_div;
+    if (cin.fail()) {
+        cout << "   Ошибка ввода скаляра!\n";
+        clearInputBuffer();
+    } else if (scalar_div == 0) {
+        cout << "   Ошибка: деление на ноль!\n";
+    } else {
+        Polynomial result4 = poly1 / scalar_div;
+        cout << "   Результат: ";
+        result4.print();
+    }
+    
+    waitForEnter();
+}
  
  void demonstrateComparisonOperators(Polynomial& poly1, Polynomial& poly2) {
      system("clear");
@@ -400,7 +393,7 @@
      poly2.print();
      cout << endl;
      
-     cout << "Сравнение полиномов по коэффициентам:\n";
+     cout << "Сравнение полиномов по значениям в точке x:\n";
      cout << "poly1 < poly2:  " << (poly1 < poly2 ? "true" : "false") << endl;
      cout << "poly1 > poly2:  " << (poly1 > poly2 ? "true" : "false") << endl;
      cout << "poly1 <= poly2: " << (poly1 <= poly2 ? "true" : "false") << endl;
@@ -416,7 +409,7 @@
      
      do {
          system("clear");
-         cout << "ПОИСК КОРНЕЙ И СТАТИЧЕСКОЕ ПОЛЕ\n\n";
+         cout << "ПОИСК КОРНЕЙ СТАТИЧЕСКОЕ ПОЛЕ\n\n";
          
          cout << "Текущие полиномы:\n";
          cout << "poly1: ";

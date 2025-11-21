@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['geta_13',['getA',['../class_polynomka.html#a7b4cd148017509b921d2c785414bbeb0',1,'Polynomka']]],
-  ['getb_14',['getB',['../class_polynomka.html#a6e6560d72f560042f2f51eb0cb1b8349',1,'Polynomka']]],
-  ['getc_15',['getC',['../class_polynomka.html#a31b341529ef66949216257f1a6a1b5c7',1,'Polynomka']]],
-  ['getrootscalculationcount_16',['getRootsCalculationCount',['../class_polynomka.html#ad6bafdd85a5868043bc900bcd0b1f92a',1,'Polynomka']]]
+  ['operator_21_3d_16',['operator!=',['../class_polynomial.html#a5deec7ce5c966458b5f0d5f571805e17',1,'Polynomial']]],
+  ['operator_2a_17',['operator*',['../class_polynomial.html#a6ed77f2cc94c8244abebb15f4a4a3e0b',1,'Polynomial']]],
+  ['operator_2a_3d_18',['operator*=',['../class_polynomial.html#adf9081f9687d297e6599960bee2284fa',1,'Polynomial']]],
+  ['operator_2b_19',['operator+',['../class_polynomial.html#a8242168d3de005c486f66034f1c1ccc7',1,'Polynomial']]],
+  ['operator_2b_2b_20',['operator++',['../class_polynomial.html#a3df78dd8b4d5b6c4d8954d5d9aa9071a',1,'Polynomial::operator++()'],['../class_polynomial.html#a748223810baac477ab0bad95e3d4a96b',1,'Polynomial::operator++(int)']]],
+  ['operator_2b_3d_21',['operator+=',['../class_polynomial.html#a6e4e3e2dfa7f5e2e6e3a5f93aba26071',1,'Polynomial']]],
+  ['operator_2d_22',['operator-',['../class_polynomial.html#ad13134583073c5103033b2053a9e6aec',1,'Polynomial']]],
+  ['operator_2d_2d_23',['operator--',['../class_polynomial.html#a499f149d99e73c002e41a43162537d04',1,'Polynomial::operator--(int)'],['../class_polynomial.html#acd0e9915e7ecf924a71175c9bfc8c761',1,'Polynomial::operator--()']]],
+  ['operator_2d_3d_24',['operator-=',['../class_polynomial.html#a9022f5430315e2b2fbe096c41f096282',1,'Polynomial']]],
+  ['operator_2f_25',['operator/',['../class_polynomial.html#a021b81abff8665743b0057f14a7433b0',1,'Polynomial']]],
+  ['operator_2f_3d_26',['operator/=',['../class_polynomial.html#a1da29b01fcaf5146880503c0b4385eb5',1,'Polynomial']]],
+  ['operator_3c_27',['operator&lt;',['../class_polynomial.html#a77af662dfb9f8b76ee3cd3ab048e0082',1,'Polynomial']]],
+  ['operator_3c_3d_28',['operator&lt;=',['../class_polynomial.html#a67626b92424ef11e5144cb6bb21fa323',1,'Polynomial']]],
+  ['operator_3d_3d_29',['operator==',['../class_polynomial.html#a221fa2b7494d726b2d0655a2e51f3f88',1,'Polynomial']]],
+  ['operator_3e_30',['operator&gt;',['../class_polynomial.html#a56f37e269a63b34db7b0e917237dc234',1,'Polynomial']]],
+  ['operator_3e_3d_31',['operator&gt;=',['../class_polynomial.html#a4a4b2bbe78998debc1bd70aa0f0c8bca',1,'Polynomial']]]
 ];

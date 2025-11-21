@@ -1,0 +1,329 @@
+\hypertarget{class_polynomial}{}\doxysection{Класс Polynomial}
+\label{class_polynomial}\index{Polynomial@{Polynomial}}
+
+
+Класс для работы с многочленами второй степени вида ax² + bx + c.  
+
+
+
+
+{\ttfamily \#include $<$Polynomial.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_polynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию. Создает нулевой многочлен 0x² + 0x + 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial_a91657a18f8307f1518b0a876ed97a484}{Polynomial}} (double a, double b, double c)
+\begin{DoxyCompactList}\small\item\em Параметризованный конструктор \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial_affeea86a50583935b03d5f6450d7daa5}{Polynomial}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial_a96130e913259691bd82b7d910d586169}{$\sim$\+Polynomial}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор с выводом сообщения \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polynomial_aa29d36dd750be032b65c78007d3c71c5}{getA}} () const
+\item 
+double \mbox{\hyperlink{class_polynomial_ad28dfe9db7af615e6efcb83425a90ff8}{getB}} () const
+\item 
+double \mbox{\hyperlink{class_polynomial_a7b076b75e4302e4f7e46295a293bdc89}{getC}} () const
+\item 
+void \mbox{\hyperlink{class_polynomial_a014e150ef94d5a7bf1938fb4297e14be}{set\+Coefficients}} (double a, double b, double c)
+\item 
+double \mbox{\hyperlink{class_polynomial_a1e9079eb7d7438fd14c4788d6131f8c7}{evaluate}} (double x) const
+\begin{DoxyCompactList}\small\item\em Вычисление значения многочлена в точке x. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polynomial_a6f608c15b3dd41fe56aa9070f78681c2}{find\+Roots}} () const
+\begin{DoxyCompactList}\small\item\em Поиск и вывод корней многочлена \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \& \mbox{\hyperlink{class_polynomial_a3df78dd8b4d5b6c4d8954d5d9aa9071a}{operator++}} ()
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{class_polynomial_a748223810baac477ab0bad95e3d4a96b}{operator++}} (int)
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \& \mbox{\hyperlink{class_polynomial_acd0e9915e7ecf924a71175c9bfc8c761}{operator-\/-\/}} ()
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{class_polynomial_a499f149d99e73c002e41a43162537d04}{operator-\/-\/}} (int)
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \& \mbox{\hyperlink{class_polynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071}{operator+=}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other)
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \& \mbox{\hyperlink{class_polynomial_a9022f5430315e2b2fbe096c41f096282}{operator-\/=}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other)
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \& \mbox{\hyperlink{class_polynomial_adf9081f9687d297e6599960bee2284fa}{operator$\ast$=}} (double scalar)
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \& \mbox{\hyperlink{class_polynomial_a1da29b01fcaf5146880503c0b4385eb5}{operator/=}} (double scalar)
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{class_polynomial_a8242168d3de005c486f66034f1c1ccc7}{operator+}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{class_polynomial_ad13134583073c5103033b2053a9e6aec}{operator-\/}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{class_polynomial_a6ed77f2cc94c8244abebb15f4a4a3e0b}{operator$\ast$}} (double scalar) const
+\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{class_polynomial_a021b81abff8665743b0057f14a7433b0}{operator/}} (double scalar) const
+\item 
+bool \mbox{\hyperlink{class_polynomial_a77af662dfb9f8b76ee3cd3ab048e0082}{operator$<$}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_polynomial_a56f37e269a63b34db7b0e917237dc234}{operator$>$}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_polynomial_a67626b92424ef11e5144cb6bb21fa323}{operator$<$=}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_polynomial_a4a4b2bbe78998debc1bd70aa0f0c8bca}{operator$>$=}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_polynomial_a221fa2b7494d726b2d0655a2e51f3f88}{operator==}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_polynomial_a5deec7ce5c966458b5f0d5f571805e17}{operator!=}} (const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other) const
+\item 
+void \mbox{\hyperlink{class_polynomial_ac796159642183ada90df566d46ba524d}{print}} () const
+\begin{DoxyCompactList}\small\item\em Вывод многочлена в читаемом формате \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::size\+\_\+t \mbox{\hyperlink{class_polynomial_a107431e49ed3de354630d7c7795b6a88}{get\+Roots\+Calculation\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества вызовов поиска корней \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с многочленами второй степени вида ax² + bx + c. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_polynomial_a961dec5c0727f03e5273f74a345dfbb6}\label{class_polynomial_a961dec5c0727f03e5273f74a345dfbb6}} 
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор по умолчанию. Создает нулевой многочлен 0x² + 0x + 0. 
+
+\mbox{\Hypertarget{class_polynomial_a91657a18f8307f1518b0a876ed97a484}\label{class_polynomial_a91657a18f8307f1518b0a876ed97a484}} 
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c }\end{DoxyParamCaption})}
+
+
+
+Параметризованный конструктор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & Коэффициент при x² \\
+\hline
+{\em b} & Коэффициент при x \\
+\hline
+{\em c} & Свободный член \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_polynomial_affeea86a50583935b03d5f6450d7daa5}\label{class_polynomial_affeea86a50583935b03d5f6450d7daa5}} 
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & Объект для копирования \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_polynomial_a96130e913259691bd82b7d910d586169}\label{class_polynomial_a96130e913259691bd82b7d910d586169}} 
+\index{Polynomial@{Polynomial}!````~Polynomial@{$\sim$Polynomial}}
+\index{````~Polynomial@{$\sim$Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{$\sim$Polynomial()}{~Polynomial()}}
+{\footnotesize\ttfamily Polynomial\+::$\sim$\+Polynomial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор с выводом сообщения 
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_polynomial_a1e9079eb7d7438fd14c4788d6131f8c7}\label{class_polynomial_a1e9079eb7d7438fd14c4788d6131f8c7}} 
+\index{Polynomial@{Polynomial}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily double Polynomial\+::evaluate (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const}
+
+
+
+Вычисление значения многочлена в точке x. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & Точка для вычисления \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение многочлена в точке x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_polynomial_a6f608c15b3dd41fe56aa9070f78681c2}\label{class_polynomial_a6f608c15b3dd41fe56aa9070f78681c2}} 
+\index{Polynomial@{Polynomial}!findRoots@{findRoots}}
+\index{findRoots@{findRoots}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{findRoots()}{findRoots()}}
+{\footnotesize\ttfamily void Polynomial\+::find\+Roots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Поиск и вывод корней многочлена 
+
+\mbox{\Hypertarget{class_polynomial_aa29d36dd750be032b65c78007d3c71c5}\label{class_polynomial_aa29d36dd750be032b65c78007d3c71c5}} 
+\index{Polynomial@{Polynomial}!getA@{getA}}
+\index{getA@{getA}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{getA()}{getA()}}
+{\footnotesize\ttfamily double Polynomial\+::getA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_polynomial_ad28dfe9db7af615e6efcb83425a90ff8}\label{class_polynomial_ad28dfe9db7af615e6efcb83425a90ff8}} 
+\index{Polynomial@{Polynomial}!getB@{getB}}
+\index{getB@{getB}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{getB()}{getB()}}
+{\footnotesize\ttfamily double Polynomial\+::getB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_polynomial_a7b076b75e4302e4f7e46295a293bdc89}\label{class_polynomial_a7b076b75e4302e4f7e46295a293bdc89}} 
+\index{Polynomial@{Polynomial}!getC@{getC}}
+\index{getC@{getC}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{getC()}{getC()}}
+{\footnotesize\ttfamily double Polynomial\+::getC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_polynomial_a107431e49ed3de354630d7c7795b6a88}\label{class_polynomial_a107431e49ed3de354630d7c7795b6a88}} 
+\index{Polynomial@{Polynomial}!getRootsCalculationCount@{getRootsCalculationCount}}
+\index{getRootsCalculationCount@{getRootsCalculationCount}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{getRootsCalculationCount()}{getRootsCalculationCount()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Polynomial\+::get\+Roots\+Calculation\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получение количества вызовов поиска корней 
+
+\begin{DoxyReturn}{Возвращает}
+Количество вызовов 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_polynomial_a5deec7ce5c966458b5f0d5f571805e17}\label{class_polynomial_a5deec7ce5c966458b5f0d5f571805e17}} 
+\index{Polynomial@{Polynomial}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Polynomial\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a6ed77f2cc94c8244abebb15f4a4a3e0b}\label{class_polynomial_a6ed77f2cc94c8244abebb15f4a4a3e0b}} 
+\index{Polynomial@{Polynomial}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{double}]{scalar }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_adf9081f9687d297e6599960bee2284fa}\label{class_polynomial_adf9081f9687d297e6599960bee2284fa}} 
+\index{Polynomial@{Polynomial}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} \& Polynomial\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{double}]{scalar }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a8242168d3de005c486f66034f1c1ccc7}\label{class_polynomial_a8242168d3de005c486f66034f1c1ccc7}} 
+\index{Polynomial@{Polynomial}!operator+@{operator+}}
+\index{operator+@{operator+}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a3df78dd8b4d5b6c4d8954d5d9aa9071a}\label{class_polynomial_a3df78dd8b4d5b6c4d8954d5d9aa9071a}} 
+\index{Polynomial@{Polynomial}!operator++@{operator++}}
+\index{operator++@{operator++}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} \& Polynomial\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a748223810baac477ab0bad95e3d4a96b}\label{class_polynomial_a748223810baac477ab0bad95e3d4a96b}} 
+\index{Polynomial@{Polynomial}!operator++@{operator++}}
+\index{operator++@{operator++}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071}\label{class_polynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071}} 
+\index{Polynomial@{Polynomial}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} \& Polynomial\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_ad13134583073c5103033b2053a9e6aec}\label{class_polynomial_ad13134583073c5103033b2053a9e6aec}} 
+\index{Polynomial@{Polynomial}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_acd0e9915e7ecf924a71175c9bfc8c761}\label{class_polynomial_acd0e9915e7ecf924a71175c9bfc8c761}} 
+\index{Polynomial@{Polynomial}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} \& Polynomial\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a499f149d99e73c002e41a43162537d04}\label{class_polynomial_a499f149d99e73c002e41a43162537d04}} 
+\index{Polynomial@{Polynomial}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a9022f5430315e2b2fbe096c41f096282}\label{class_polynomial_a9022f5430315e2b2fbe096c41f096282}} 
+\index{Polynomial@{Polynomial}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} \& Polynomial\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a021b81abff8665743b0057f14a7433b0}\label{class_polynomial_a021b81abff8665743b0057f14a7433b0}} 
+\index{Polynomial@{Polynomial}!operator/@{operator/}}
+\index{operator/@{operator/}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+::operator/ (\begin{DoxyParamCaption}\item[{double}]{scalar }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a1da29b01fcaf5146880503c0b4385eb5}\label{class_polynomial_a1da29b01fcaf5146880503c0b4385eb5}} 
+\index{Polynomial@{Polynomial}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} \& Polynomial\+::operator/= (\begin{DoxyParamCaption}\item[{double}]{scalar }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_polynomial_a77af662dfb9f8b76ee3cd3ab048e0082}\label{class_polynomial_a77af662dfb9f8b76ee3cd3ab048e0082}} 
+\index{Polynomial@{Polynomial}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Polynomial\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a67626b92424ef11e5144cb6bb21fa323}\label{class_polynomial_a67626b92424ef11e5144cb6bb21fa323}} 
+\index{Polynomial@{Polynomial}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Polynomial\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a221fa2b7494d726b2d0655a2e51f3f88}\label{class_polynomial_a221fa2b7494d726b2d0655a2e51f3f88}} 
+\index{Polynomial@{Polynomial}!operator==@{operator==}}
+\index{operator==@{operator==}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Polynomial\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a56f37e269a63b34db7b0e917237dc234}\label{class_polynomial_a56f37e269a63b34db7b0e917237dc234}} 
+\index{Polynomial@{Polynomial}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Polynomial\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_a4a4b2bbe78998debc1bd70aa0f0c8bca}\label{class_polynomial_a4a4b2bbe78998debc1bd70aa0f0c8bca}} 
+\index{Polynomial@{Polynomial}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Polynomial\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_polynomial_ac796159642183ada90df566d46ba524d}\label{class_polynomial_ac796159642183ada90df566d46ba524d}} 
+\index{Polynomial@{Polynomial}!print@{print}}
+\index{print@{print}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Polynomial\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Вывод многочлена в читаемом формате 
+
+\mbox{\Hypertarget{class_polynomial_a014e150ef94d5a7bf1938fb4297e14be}\label{class_polynomial_a014e150ef94d5a7bf1938fb4297e14be}} 
+\index{Polynomial@{Polynomial}!setCoefficients@{setCoefficients}}
+\index{setCoefficients@{setCoefficients}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{setCoefficients()}{setCoefficients()}}
+{\footnotesize\ttfamily void Polynomial\+::set\+Coefficients (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c }\end{DoxyParamCaption})}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_polynomial_8h}{Polynomial.\+h}}\item 
+\mbox{\hyperlink{_polynomial_8cpp}{Polynomial.\+cpp}}\end{DoxyCompactItemize}

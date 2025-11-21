@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['findroots_56',['findRoots',['../class_polynomka.html#a9c9df7e02218915bc624e900af4ce4b0',1,'Polynomka']]]
+  ['findroots_52',['findRoots',['../class_polynomial.html#a6f608c15b3dd41fe56aa9070f78681c2',1,'Polynomial']]]
 ];

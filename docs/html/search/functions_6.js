@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['main_67',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]]
+  ['operator_21_3d_58',['operator!=',['../class_polynomial.html#a5deec7ce5c966458b5f0d5f571805e17',1,'Polynomial']]],
+  ['operator_2a_59',['operator*',['../class_polynomial.html#a6ed77f2cc94c8244abebb15f4a4a3e0b',1,'Polynomial']]],
+  ['operator_2a_3d_60',['operator*=',['../class_polynomial.html#adf9081f9687d297e6599960bee2284fa',1,'Polynomial']]],
+  ['operator_2b_61',['operator+',['../class_polynomial.html#a8242168d3de005c486f66034f1c1ccc7',1,'Polynomial']]],
+  ['operator_2b_2b_62',['operator++',['../class_polynomial.html#a3df78dd8b4d5b6c4d8954d5d9aa9071a',1,'Polynomial::operator++()'],['../class_polynomial.html#a748223810baac477ab0bad95e3d4a96b',1,'Polynomial::operator++(int)']]],
+  ['operator_2b_3d_63',['operator+=',['../class_polynomial.html#a6e4e3e2dfa7f5e2e6e3a5f93aba26071',1,'Polynomial']]],
+  ['operator_2d_64',['operator-',['../class_polynomial.html#ad13134583073c5103033b2053a9e6aec',1,'Polynomial']]],
+  ['operator_2d_2d_65',['operator--',['../class_polynomial.html#a499f149d99e73c002e41a43162537d04',1,'Polynomial::operator--(int)'],['../class_polynomial.html#acd0e9915e7ecf924a71175c9bfc8c761',1,'Polynomial::operator--()']]],
+  ['operator_2d_3d_66',['operator-=',['../class_polynomial.html#a9022f5430315e2b2fbe096c41f096282',1,'Polynomial']]],
+  ['operator_2f_67',['operator/',['../class_polynomial.html#a021b81abff8665743b0057f14a7433b0',1,'Polynomial']]],
+  ['operator_2f_3d_68',['operator/=',['../class_polynomial.html#a1da29b01fcaf5146880503c0b4385eb5',1,'Polynomial']]],
+  ['operator_3c_69',['operator&lt;',['../class_polynomial.html#a77af662dfb9f8b76ee3cd3ab048e0082',1,'Polynomial']]],
+  ['operator_3c_3d_70',['operator&lt;=',['../class_polynomial.html#a67626b92424ef11e5144cb6bb21fa323',1,'Polynomial']]],
+  ['operator_3d_3d_71',['operator==',['../class_polynomial.html#a221fa2b7494d726b2d0655a2e51f3f88',1,'Polynomial']]],
+  ['operator_3e_72',['operator&gt;',['../class_polynomial.html#a56f37e269a63b34db7b0e917237dc234',1,'Polynomial']]],
+  ['operator_3e_3d_73',['operator&gt;=',['../class_polynomial.html#a4a4b2bbe78998debc1bd70aa0f0c8bca',1,'Polynomial']]]
 ];

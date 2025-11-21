@@ -1,0 +1,103 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Демонстрационная программа для класса \mbox{\hyperlink{class_polynomial}{Polynomial}} с интерактивным меню  
+
+
+{\ttfamily \#include \char`\"{}Polynomial.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a3f59019099538e8aa23e72a544461c26}{display\+Main\+Menu}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_afcd8a7028a976f2784e087065e0f915c}{create\+Polynomial\+Menu}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly, \mbox{\hyperlink{class_polynomial}{Polynomial}} \&other\+Poly, int poly\+Number)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8114029f67034a4a571a5fcd8b95d60a}{demonstrate\+Unary\+Operators}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly1, \mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly2)
+\item 
+void \mbox{\hyperlink{main_8cpp_a536659aeb592c82fd6f7e69286964fa4}{demonstrate\+Arithmetic\+Assignment}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly1, \mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly2)
+\item 
+void \mbox{\hyperlink{main_8cpp_a2e179c8ae20f8a9cd1638e2ddc7c4035}{demonstrate\+Binary\+Operators}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly1, \mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly2)
+\item 
+void \mbox{\hyperlink{main_8cpp_ab551baaf63ed983fbbc45917367ecc85}{demonstrate\+Comparison\+Operators}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly1, \mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly2)
+\item 
+void \mbox{\hyperlink{main_8cpp_a0f2f720ee838be00f9a2363471f71bbe}{demonstrate\+Roots\+And\+Static}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly1, \mbox{\hyperlink{class_polynomial}{Polynomial}} \&poly2)
+\item 
+void \mbox{\hyperlink{main_8cpp_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_ab80f005039b55cdbdbea52bbbad3c622}{wait\+For\+Enter}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Демонстрационная программа для класса \mbox{\hyperlink{class_polynomial}{Polynomial}} с интерактивным меню 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a22d7c3e857afba4903a76181f91ea9fb}\label{main_8cpp_a22d7c3e857afba4903a76181f91ea9fb}} 
+\index{main.cpp@{main.cpp}!clearInputBuffer@{clearInputBuffer}}
+\index{clearInputBuffer@{clearInputBuffer}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{clearInputBuffer()}{clearInputBuffer()}}
+{\footnotesize\ttfamily void clear\+Input\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_afcd8a7028a976f2784e087065e0f915c}\label{main_8cpp_afcd8a7028a976f2784e087065e0f915c}} 
+\index{main.cpp@{main.cpp}!createPolynomialMenu@{createPolynomialMenu}}
+\index{createPolynomialMenu@{createPolynomialMenu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{createPolynomialMenu()}{createPolynomialMenu()}}
+{\footnotesize\ttfamily void create\+Polynomial\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{other\+Poly,  }\item[{int}]{poly\+Number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a536659aeb592c82fd6f7e69286964fa4}\label{main_8cpp_a536659aeb592c82fd6f7e69286964fa4}} 
+\index{main.cpp@{main.cpp}!demonstrateArithmeticAssignment@{demonstrateArithmeticAssignment}}
+\index{demonstrateArithmeticAssignment@{demonstrateArithmeticAssignment}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateArithmeticAssignment()}{demonstrateArithmeticAssignment()}}
+{\footnotesize\ttfamily void demonstrate\+Arithmetic\+Assignment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly1,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a2e179c8ae20f8a9cd1638e2ddc7c4035}\label{main_8cpp_a2e179c8ae20f8a9cd1638e2ddc7c4035}} 
+\index{main.cpp@{main.cpp}!demonstrateBinaryOperators@{demonstrateBinaryOperators}}
+\index{demonstrateBinaryOperators@{demonstrateBinaryOperators}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateBinaryOperators()}{demonstrateBinaryOperators()}}
+{\footnotesize\ttfamily void demonstrate\+Binary\+Operators (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly1,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ab551baaf63ed983fbbc45917367ecc85}\label{main_8cpp_ab551baaf63ed983fbbc45917367ecc85}} 
+\index{main.cpp@{main.cpp}!demonstrateComparisonOperators@{demonstrateComparisonOperators}}
+\index{demonstrateComparisonOperators@{demonstrateComparisonOperators}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateComparisonOperators()}{demonstrateComparisonOperators()}}
+{\footnotesize\ttfamily void demonstrate\+Comparison\+Operators (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly1,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a0f2f720ee838be00f9a2363471f71bbe}\label{main_8cpp_a0f2f720ee838be00f9a2363471f71bbe}} 
+\index{main.cpp@{main.cpp}!demonstrateRootsAndStatic@{demonstrateRootsAndStatic}}
+\index{demonstrateRootsAndStatic@{demonstrateRootsAndStatic}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateRootsAndStatic()}{demonstrateRootsAndStatic()}}
+{\footnotesize\ttfamily void demonstrate\+Roots\+And\+Static (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly1,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a8114029f67034a4a571a5fcd8b95d60a}\label{main_8cpp_a8114029f67034a4a571a5fcd8b95d60a}} 
+\index{main.cpp@{main.cpp}!demonstrateUnaryOperators@{demonstrateUnaryOperators}}
+\index{demonstrateUnaryOperators@{demonstrateUnaryOperators}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateUnaryOperators()}{demonstrateUnaryOperators()}}
+{\footnotesize\ttfamily void demonstrate\+Unary\+Operators (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly1,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}} \&}]{poly2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a3f59019099538e8aa23e72a544461c26}\label{main_8cpp_a3f59019099538e8aa23e72a544461c26}} 
+\index{main.cpp@{main.cpp}!displayMainMenu@{displayMainMenu}}
+\index{displayMainMenu@{displayMainMenu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{displayMainMenu()}{displayMainMenu()}}
+{\footnotesize\ttfamily void display\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ab80f005039b55cdbdbea52bbbad3c622}\label{main_8cpp_ab80f005039b55cdbdbea52bbbad3c622}} 
+\index{main.cpp@{main.cpp}!waitForEnter@{waitForEnter}}
+\index{waitForEnter@{waitForEnter}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{waitForEnter()}{waitForEnter()}}
+{\footnotesize\ttfamily void wait\+For\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

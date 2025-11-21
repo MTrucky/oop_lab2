@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['isequal_17',['isEqual',['../class_polynomka.html#a38d447691671292c7d8cd212984f32af',1,'Polynomka']]],
-  ['isgreaterorequal_18',['isGreaterOrEqual',['../class_polynomka.html#a92da6c8074401e8f402dfd3d08b9a36f',1,'Polynomka']]],
-  ['isgreaterthan_19',['isGreaterThan',['../class_polynomka.html#a303f0a0bef36f3a25df0d2ec3346186d',1,'Polynomka']]],
-  ['islessorequal_20',['isLessOrEqual',['../class_polynomka.html#aa782750600a006166e1f65341ca63092',1,'Polynomka']]],
-  ['islessthan_21',['isLessThan',['../class_polynomka.html#a252ad12e3a0f46b5dc2447181e933b9c',1,'Polynomka']]],
-  ['isnotequal_22',['isNotEqual',['../class_polynomka.html#ad8fbafaf4c2adfa1f1a88dbc9f85660f',1,'Polynomka']]]
+  ['polynomial_32',['Polynomial',['../class_polynomial.html',1,'Polynomial'],['../class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6',1,'Polynomial::Polynomial()'],['../class_polynomial.html#a91657a18f8307f1518b0a876ed97a484',1,'Polynomial::Polynomial(double a, double b, double c)'],['../class_polynomial.html#affeea86a50583935b03d5f6450d7daa5',1,'Polynomial::Polynomial(const Polynomial &amp;other)']]],
+  ['polynomial_2ecpp_33',['Polynomial.cpp',['../_polynomial_8cpp.html',1,'']]],
+  ['polynomial_2eh_34',['Polynomial.h',['../_polynomial_8h.html',1,'']]],
+  ['print_35',['print',['../class_polynomial.html#ac796159642183ada90df566d46ba524d',1,'Polynomial']]]
 ];
